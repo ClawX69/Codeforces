@@ -1,5 +1,3 @@
-from itertools import *
-import random
 test = int(input())
 
 for i in range(test):
@@ -12,11 +10,11 @@ for i in range(test):
         print(n)
         print("1 "*n)
     else:
-        if k >= 2 and n%k == 0:
+        if k >= 2 and n%2 == 0:
             print("YES")
-            print(n//k)
-            print("2 "*(n//k))
-        elif k>= 3:
+            print(n//2)
+            print("2 "*(n//2))
+        elif k >= 3:
             print("YES")
             print(f"{n//2}")
             print("3", end=" ")
